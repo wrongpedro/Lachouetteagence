@@ -59,6 +59,7 @@
 				<h1 class="text-center hero-bloc-text tc-white">
 					Parlons web design !
 				</h1>
+                <br>
 				<p class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
@@ -72,31 +73,39 @@
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
-		<div class="row">
+		<div class="row form-box">
 			<div class="col-sm-8">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate success-msg="Votre message a été envoyé !" fail-msg="Désolé, il semble que notre serveur de messagerie ne répond pas, Désolé pour la gêne occasionnée!">
 					<div class="form-group">
-						<label>
+						<label id="name">
 							Nom
 						</label>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label id="email">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label id="origine">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<select id="origine" class="form-control">
+                        <option value="">Liste de choix...</option>
+                            <option value="">Google (ou autre moteur de recherche)</option>
+                            <option value="">Réseaux Social</option>
+                            <option value="">Ami ou une connaissance</option>
+                            <option value="">Partenaires</option>
+                            <option value="">Autres</option>
+                        </select>
 					</div>
 					<div class="form-group">
-						<label>
+						<label id="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+                        <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer

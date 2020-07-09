@@ -825,6 +825,12 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+.form-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
