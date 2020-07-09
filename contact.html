@@ -77,22 +77,22 @@
 			<div class="col-sm-8">
 				<form id="form_1" novalidate success-msg="Votre message a été envoyé !" fail-msg="Désolé, il semble que notre serveur de messagerie ne répond pas, Désolé pour la gêne occasionnée!">
 					<div class="form-group">
-						<label id="name">
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input type="text" name="name" id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label id="email">
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input type="email" id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label id="origine">
+						<label for="origine">
 							Comment nous avez-vous connu ?
 						</label>
-						<select id="origine" class="form-control">
+						<select name="origine" id="origine" class="form-control">
                         <option value="">Liste de choix...</option>
                             <option value="">Google (ou autre moteur de recherche)</option>
                             <option value="">Réseaux Social</option>
@@ -102,10 +102,10 @@
                         </select>
 					</div>
 					<div class="form-group">
-						<label id="message">
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label>
-                        <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                        <textarea type="text" name="message" id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
