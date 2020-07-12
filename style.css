@@ -535,6 +535,10 @@ button {
     opacity: 1;
 }
 
+.fa-chevron-up{
+    color: #FFF;
+}
+
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -632,6 +636,14 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
     padding: 6px 13px 1px 10px;
     left: 25px;
+}
+
+.fa-chevron-left{
+    color: #FFF;
+}
+
+.fa-chevron-right{
+    color: #FFF;
 }
 
 .snapshot-lb .modal-body {
