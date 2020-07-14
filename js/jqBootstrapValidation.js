@@ -183,7 +183,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
+              message = "Adresse courriel invalide<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
@@ -791,7 +791,7 @@
 				name: "Validemail",
 				type: "regex",
 				regex: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\.[A-Za-z]{2,10}",
-				message: "Not a valid email address<!-- data-validator-validemail-message to override -->"
+				message: "Adresse courriel invalide<!-- data-validator-validemail-message to override -->"
 			},
 			passwordagain: {
 				name: "Passwordagain",
@@ -825,24 +825,24 @@
 				name: "Positivenumber",
 				type: "min",
 				min: 0,
-				message: "Must be a positive number<!-- data-validator-positivenumber-message to override -->"
+				message: "Doit être un nombre positif<!-- data-validator-positivenumber-message to override -->"
 			},
 			negativenumber: {
 				name: "Negativenumber",
 				type: "max",
 				max: 0,
-				message: "Must be a negative number<!-- data-validator-negativenumber-message to override -->"
+				message: "Doit être un nombre négatif<!-- data-validator-negativenumber-message to override -->"
 			},
 			required: {
 				name: "Required",
 				type: "required",
-				message: "This is required<!-- data-validator-required-message to override -->"
+				message: "Ceci est nécessaire<!-- data-validator-required-message to override -->"
 			},
 			checkone: {
 				name: "Checkone",
 				type: "minchecked",
 				minchecked: 1,
-				message: "Check at least one option<!-- data-validation-checkone-message to override -->"
+				message: "Cochez au moins une option<!-- data-validation-checkone-message to override -->"
 			}
 		}
 	};
