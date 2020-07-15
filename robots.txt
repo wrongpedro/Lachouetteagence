@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://wrongpedro.github.io/lachouetteagence/sitemap.xml
